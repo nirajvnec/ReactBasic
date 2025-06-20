@@ -1,6 +1,4 @@
-public class ReportStatusSummaryDto
+public interface IReportStatusRepository
 {
-    public int InProgress { get; set; }
-    public int Completed { get; set; }
-    public int Failed { get; set; }
+    Task<ReportStatusSummaryDto> GetReportStatusSummaryAsync();
 }
