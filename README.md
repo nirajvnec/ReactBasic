@@ -1,0 +1,1 @@
+this error is happening because of a missing optional native module @rollup/rollup-linux-x64-musl, which is a known issue (especially in Docker/Alpine environments). It’s related to how npm handles optional dependencies.
