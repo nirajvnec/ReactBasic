@@ -1,1 +1,6 @@
-this error is happening because of a missing optional native module @rollup/rollup-linux-x64-musl, which is a known issue (especially in Docker/Alpine environments). It’s related to how npm handles optional dependencies.
+// src/types/ReportStatus.ts
+export interface ReportStatus {
+  inProgress: number;
+  completed: number;
+  failed: number;
+}
